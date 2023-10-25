@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -23,7 +22,6 @@
             android:orientation="vertical"
             android:padding="16dp">
 
-            <!-- Image/Logo (ImageView) -->
             <ImageView
                 android:id="@+id/imageLogo"
                 android:layout_width="wrap_content"
@@ -31,7 +29,6 @@
                 android:src="@drawable/expense_logo"
                 android:layout_gravity="center" />
 
-            <!-- Expense Amount (EditText) -->
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -43,7 +40,6 @@
                     android:layout_height="wrap_content" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <!-- Date Input (TextInputEditText) -->
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -57,13 +53,16 @@
                     android:focusableInTouchMode="false" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <!-- Category (Spinner) -->
             <Spinner
                 android:id="@+id/spinnerCategory"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/btn_dropdown"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp" />
 
-            <!-- Description (EditText) -->
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -75,7 +74,6 @@
                     android:layout_height="wrap_content" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <!-- Add Expense Button (FloatingActionButton) -->
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/fabAddExpense"
                 android:layout_width="wrap_content"
